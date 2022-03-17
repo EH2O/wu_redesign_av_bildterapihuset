@@ -6,8 +6,9 @@ body {
   max-height: 100%;
 }
 body {
-  background-color: #d4d3b7;
+  background-color: #D4D3B7;
 }
+
 
 .images{
   margin: 0;
@@ -25,16 +26,51 @@ body {
   font-size: 2rem;
   color: white;
 }
-.buttt, .butt{
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 2rem;
+:root {
+  --color-light: #f0f0f0;
+  --color-dark: #E38A9A;
+  --color-primary: #f5a3b3;
+  --color- :#4a0080;
+}
 
+.btn {
+  
+  text-align: center;
+  text-decoration: none;
+  margin: 1rem;
+  padding: 1.5rem 5rem;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-button{ 
-  height: 4rem;
-  width: 20rem;
+.btn:hover {
+    background-color: var(--color-primary);
 }
+.btn-rounded {
+    border-radius: 2rem;
+}
+.btn-animated {
+    background: var(--color-primary);
+    transition: background 0.5s ease-in-out border 0.5s ease-in-out;
+}
+.btn-animated:hover {
+    border: 1px solid var(--color-primary);
+    background: var(--color-dark);
+}
+.bg-primary {
+    background-color: var(--color-primary);
+}
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.flex{
+  display:flex;
+  justify-content: space-evenly;
+}
+
 @media (min-width: 786px) {
   header {
     font-size: 24px;
